@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Result - CAPTCHA Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .govt-logos {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo {
+            height: 80px;
+        }
+        .nta-logo {
+            height: 60px;
+        }
+        .captcha-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .captcha-display {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            display: inline-block;
+            margin: 10px 0;
+            border: 1px dashed #ccc;
+            color: #1a237e;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 250px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .submit-btn {
+            background-color: #1a237e;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+        h1 {
+            color: #1a237e;
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .captcha-instruction {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="govt-logos">
+            <img src="Images/indian_emblem.png" alt="Government of India" class="logo">
+            <div>
+                <h2 style="margin:0;color:#1a237e">Department of Higher Education</h2>
+                <h3 style="margin:5px 0 0;color:#1a237e">Ministry of Education, Government of India</h3>
+            </div>
+        </div>
+        <img src="Images/nta.png" alt="National Testing Agency" class="nta-logo">
+    </div>
+
+    <h1>View Result</h1>
+    
+    <form action="Images/login.html" method="GET">
+        <div class="captcha-box">
+            <div class="captcha-instruction">Enter CAPTCHA<br>(case sensitive):</div>
+            
+            <div style="font-weight:bold;margin-top:15px;">CAPTCHA:</div>
+            <div class="captcha-display">NABLICT</div>
+            
+            <input type="text" placeholder="Type the CAPTCHA here" name="captcha">
+            <br>
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </div>
+    </form>
+    
+    <div class="footer">
+        <p>This site is designed and hosted by NIC PEP Division. The contents are provided by NTA. For any further information, please contact NTA.</p>
+    </div>
+</body>
+</html>
